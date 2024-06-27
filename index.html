@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Kepuasan Mahasiswa</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1 id="title">Survey Kepuasan Mahasiswa</h1>
+			<p id="description">Terima kasih telah meluangkan waktu untuk mengisi survey ini</p>
+		</header>
+		<div class="form">
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input id="name" type="text" placeholder="Enter Your Name" name="name" required>
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input id="email" type="email" placeholder="Enter Your Email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="number">No Absen</label>
+				<input id="number" type="number" placeholder="Enter Your absent number" name="number" min="01" max="36" required>
+			</div>
+			<div class="drop">
+			<div class="form-group">
+				<p>Pilih Jurusan Anda</p>
+				<select id="dropdown">
+					<option selected disabled>Pilih Jurusan</option>
+					<option value="S1-informatika">S1-informatika</option>
+					<option value="S1-kewirausahaan">S1-kewirausahaan</option>
+					<option value="S1-hukum">S1-hukum</option>
+					<option value="S1-Komunikasi">S1-Komunikasi</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>pilih semester anda</p>
+				<select id="dropdown">
+					<option selected disabled>Pilih Semester</option>
+					<option value="SEMESTER1">SEMESTER 1</option>
+					<option value="SEMESTER2">SEMESTER 2</option>
+					<option value="SEMESTER3">SEMESTER 3</option>
+					<option value="SEMESTER4">SEMESTER 4</option>
+					<option value="SEMESTER5">SEMESTER 5</option>
+					<option value="SEMESTER6">SEMESTER 6</option>
+					<option value="SEMESTER7">SEMESTER 7</option>
+					<option value="SEMESTER8">SEMESTER 8</option>
+				</select>
+			</div>
+			</div>
+			<div class="form-group">
+				<p>Kepuasan anda dalam menempuh pendidikan</p>
+				<div class="puas">
+				<label><input type="radio" name="Kepuasan" value="sangat" class="input_radio">sangat</label>
+				<label><input type="radio" name="Kepuasan" value="memuaskan"class="input_radio">puas</label>
+				<label><input type="radio" name="Kepuasan" value="biasa" class="input_radio">cukup</label>
+				<label><input type="radio" name="Kepuasan" value="kurang" class="input_radio">kurang</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<p>Fasilitas yang perlu dibenahi</p>
+				<label><input type="checkbox" name="Fasilitas" value="perpustakaan" class="input_check">Perpustakaan</label>
+				<label><input type="checkbox" name="Fasilitas" value="laboratorium-komputer"class="input_check">Laboratorium komputer</label>
+				<label><input type="checkbox" name="Fasilitas" value="laboratorium-bahasa" class="input_check">laboratorium bahasa</label>
+				<label><input type="checkbox" name="Fasilitas" value="ruangan-kelas" class="input_check">ruangan kelas</label>
+				<label><input type="checkbox" name="Fasilitas" value="kantin" class="input_check">kantin</label>
+			</div>
+			<div class="form-group">
+				<p>apakah ada kritik atau saran?</p>
+				<textarea id="comment" class="input-textarea" name="saran" placeholder="masukkan kritik atau saran disini"></textarea>
+			</div>
+			<div class="form-group">
+				<button type="submit" id="submit" class="submit-button">Submit</button>
+			</div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
