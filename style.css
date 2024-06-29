@@ -27,29 +27,30 @@ body::before{
 	width: 100%;
 	margin: 1rem auto 10px auto;
 }
-@media (min-width: 768px) {
+
+/* awal dekstop */
+@media (min-width: 960px) {
 #container {
-    max-width: 720px;
-}
-}
+    max-width: 1200px
+}}
 header{
-	width: 85%;
+	width: 50%;
 	text-align: center;
 	margin: 0 auto 0 auto;
 }
 #title{
-	margin-bottom: 5px;
+	margin: 30px 0 5px 0;
 }
 #description{
 	margin-top: 5px;
 }
 .form{
-	width: 100%;
+	width: 60vw;
 	background: #FFFBFE;
 	color: #50514F;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 40px auto 0 auto;
 	border-radius: 20px;
+	transition: border-radius 0.3s ease;
 }
 #survey-form{
 	width: 85%;
@@ -62,10 +63,6 @@ label{
 }
 .form-group p{
 	margin-bottom: 3px;
-}
-input::placeholder, textarea::placeholder{
-	color: black;
-	font-family: poppins, sans-serif;
 }
 #name, #email, #number, #comment{
 	background-color: transparent;
@@ -99,16 +96,27 @@ input::placeholder, textarea::placeholder{
 	outline: 0;
 	border: none;
 	padding: 0 5%;
-	width: 40vmin;
+	width: 25vw;
 	height: 40px;
 	border-radius: 10px;
 	margin-bottom: 3px;
 	color: black;
+	transition: all 0.3s ease;
 }
-
+#dropdown:hover {
+	background-color: #48e2c8;
+	transform: scale(1.05);
+}
 .puas{
 	display: flex;
 	justify-content: space-between;
+}
+.puas label{
+	transition: transform 0.3s ease;
+}
+.puas label:hover{
+	color: black;
+	transform: scale(1.05);
 }
 #comment{
 	background-color: transparent;
@@ -147,10 +155,44 @@ input::placeholder, textarea::placeholder{
 	width: 100px;
 	transform: scale(1.08);
 }
-@media screen and (max-width: 768px) {
+/* akhir desktop */
+
+/* tablet */
+@media screen and (min-width: 500px) {
 #container {
-    max-width: 100%;
+    max-width: 960px;
+}
+header{
+	width: 95%;
+	text-align: center;
+	margin: 0 auto 0 auto;
+}
+.form{
+	width: 80vw;
+}
+#dropdown{
+	width: 32vw;
+}
+}
+/* akhir tablet */
+
+/* awal mobile */
+@media screen and (min-width: 320px) {
+#container {
+    max-width: 480px;
     margin: 0 auto 0 auto;
     border-radius: 0px;
+}
+header{
+	width: 95%;
+	text-align: center;
+	margin: 0 auto 0 auto;
+}
+.form{
+	width: 100vw;
+	border-radius: 0px;
+}
+#dropdown{
+	width: 40vw;
 }
 }
