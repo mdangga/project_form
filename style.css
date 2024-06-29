@@ -45,7 +45,7 @@ header{
 	margin-top: 5px;
 }
 .form{
-	width: 100%;
+	width: 65%;
 	background: #FFFBFE;
 	color: #50514F;
 	margin: 40px auto 0 auto;
@@ -96,7 +96,7 @@ label{
 	outline: 0;
 	border: none;
 	padding: 0 5%;
-	width: 35vw;
+	width: 22vw;
 	height: 40px;
 	border-radius: 10px;
 	margin-bottom: 3px;
