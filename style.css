@@ -101,11 +101,10 @@ label{
 	border-radius: 10px;
 	margin-bottom: 3px;
 	color: black;
-	transition: all 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 #dropdown:hover {
 	background-color: #48e2c8;
-	transform: scale(1.05);
 }
 .puas{
 	display: flex;
@@ -192,7 +191,10 @@ header{
 	width: 100vw;
 	border-radius: 0px;
 }
+.drop{
+	display: inline;
+	width: 100%;
 #dropdown{
-	width: 40vw;
+	width: 100%;
 }
 }
